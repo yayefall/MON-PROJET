@@ -1,22 +1,24 @@
 <!-- Toolbar -->
-<div style="text-align:center ; text-decoration-color:green" >
-  <h1>
-    Bienvenue dans {{ accueil }}!
-  </h1>
-  </div>
-<mat-toolbar color = "aquamarine">
+
+<mat-toolbar color = "primary">
   <mat-toolbar-row>
     <a href="https://www.academysonatel.com/">
       <span> <img  width="50px" border-radius="5px"
                    src = "./assets/photo/yayefall.jpeg"
                    alt=""> </span></a>
     <div class="centerEl">
-      <a href=""> <mat-icon aria-label="Example home icon"
-                routerLink="/accueil" routerLinkActive="active">home</mat-icon></a>
+      <!--<a href=""> <mat-icon aria-label="Example home icon"
+                routerLink="/accueil" routerLinkActive="active">login</mat-icon></a>-->
     </div>
-    <div>
+    <!--- <div>
       <a href="http://localhost:4200/login"><button mat-raised-button color="primary" routerLink="/login"
-            routerLinkActive="active" >CONNEXION</button></a></div>
+            routerLinkActive="active" >CONNEXION</button></a></div>-->
   </mat-toolbar-row>
 </mat-toolbar>
+<div style="text-align:center ">
+  <h1>
+    Bienvenue dans {{ accueil }}!
+
+  </h1>
+</div>
 <router-outlet></router-outlet>

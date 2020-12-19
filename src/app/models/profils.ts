@@ -12,13 +12,4 @@ export  class Profils {
     this.libelle = libelle;
     this.archivage = archivage;
    }
-   getId(): number{
-     return this.id;
-   }
-   getLibelle(): string{
-     return  this.libelle;
-   }
-   getArchivage(): boolean{
-     return this.archivage;
-   }
 }

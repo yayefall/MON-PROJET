@@ -1,0 +1,19 @@
+
+<span class="fill-remaining-space"></span>
+<button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>Ferme</mat-icon></button>
+<form [formGroup]="profilsService.form" class="normal-form" (submit)="onSubmit()">
+      <div class="controles-container">
+  <mat-form-field class="example-full-width">
+    <mat-label>Libelle</mat-label>
+      <input matInput placeholder="libelle"
+             class="form-control"
+             formControlName="libelle" >
+    <mat-error> Remplir le champs</mat-error>
+  </mat-form-field>
+  <div class="button-row">
+    <button mat-raised-button color="primary" type="submit" [disabled]="profilsService.form.invalid">Creer</button>
+    <button mat-raised-button color="warn" (click)="onClear()">Clear</button></div>
+
+      </div>
+
+</form>

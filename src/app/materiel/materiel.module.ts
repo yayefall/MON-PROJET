@@ -10,8 +10,12 @@ import { FlexModule } from '@angular/flex-layout';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import { JwtModule } from '@auth0/angular-jwt';
+import {JwtModule} from '@auth0/angular-jwt';
 import {MatTableModule} from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { AngularFireModule } from '@angular/fire';
 
 
 
@@ -30,7 +34,11 @@ const MaterialModules = [
   MatCardModule,
   MatInputModule,
   JwtModule,
-  MatTableModule
+  MatTableModule,
+  MatDialogModule,
+  MatPaginatorModule,
+  MatSortModule,
+ // AngularFireModule
 
 ];
 
